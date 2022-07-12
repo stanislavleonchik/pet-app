@@ -4,11 +4,20 @@ void main() => runApp(MaterialApp(
   home: Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
-        leading:
-        IconButton(
-            icon: new Icon(Icons.arrow_back_ios),
-            color: Colors.black45,
-            onPressed: () {}
+        leadingWidth: 150,
+        leading: Row(
+            children: [
+              IconButton(
+                icon: new Icon(Icons.keyboard_backspace,
+                ),
+                color: Colors.green,
+                onPressed: () {},
+              ),
+              const Text(
+                "Назад",
+                style: TextStyle(color: Colors.green, fontSize: 18),
+              )
+            ],
         ),
       )
   ),
