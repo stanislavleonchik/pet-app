@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:share/share.dart';
 void main() => runApp(MyApp());
 
 
@@ -56,12 +56,18 @@ class _MainPageState extends State<MainPage> {
                 icon: const Icon(Icons.file_upload_outlined,
                 ),
                 color: Colors.green,
-                onPressed: () {},
+                onPressed: () {
+                  Share.share('https://mobyte-internship.youtrack.cloud/agiles/131-2/current?issue=In-11');
+                  },
               )
             ],
           ),
           body: SingleChildScrollView(
+            // child: Stack(
 
+              // Image.network("https://images.pexels.com/photos/396547/pexels-photo-396547.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+              //   fit: BoxFit.cover)
+            // ),
           ),
       );
   }
