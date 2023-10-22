@@ -1,3 +1,1 @@
-# Pet App
-
-A Flutter project.
+# The Pet App is an example of a Flutter project
